@@ -14,4 +14,4 @@ jobs:
       - name: run tests
         run: poetry run python -m unittest discover .
       - name: run type checking
-        run: poetry runmypy fib_py
+        run: poetry run mypy fib_py
