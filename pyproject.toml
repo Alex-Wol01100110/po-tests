@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "potests"
+version = "0.1.0"
+description = ""
+authors = ["Alex Vovk <alex.vovk@cyberoo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mypy = "^1.11.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.0"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[MASTER]
+init-hook='import sys; sys.path.append(".")'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
